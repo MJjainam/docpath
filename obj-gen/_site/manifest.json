@@ -1,0 +1,92 @@
+{
+  "source_base_path": "/usr/local/google/home/jjainam/uvprojects/gcg/docpath/obj-gen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv1/notebookspb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv1/notebookspb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv1beta1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv1beta1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv1beta1/notebookspb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv1beta1/notebookspb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "UniversalReference",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/apiv2/notebookspb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/apiv2/notebookspb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "../obj/api/cloud.google.com/go/notebooks@latest/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/cloud.google.com/go/notebooks@latest/toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

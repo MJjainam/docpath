@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Package cloud.google.com/go/notebooks/apiv2Namespace cloud.google.com/go/notebooks/apiv2 | mysite </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Package cloud.google.com/go/notebooks/apiv2Namespace cloud.google.com/go/notebooks/apiv2 | mysite ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="mysite">
+            mysite
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="cloud.google.com/go/notebooks/apiv2">
+
+  <h1 id="cloud_google_com_go_notebooks_apiv2" data-uid="cloud.google.com/go/notebooks/apiv2" class="text-break">Package cloud.google.com/go/notebooks/apiv2Namespace cloud.google.com/go/notebooks/apiv2</h1>
+  <div class="markdown level0 summary"><p>Package notebooks is an auto-generated package for the
+Notebooks API.
+<p>Notebooks API is used to manage notebook resources in Google Cloud.
+<h2 id="hdr-General_documentation">General documentation</h2>
+<p>For information that is relevant for all client libraries please reference
+<a href="https://pkg.go.dev/cloud.google.com/go#pkg-overview">https://pkg.go.dev/cloud.google.com/go#pkg-overview</a>. Some information on this
+page includes:
+<ul>
+<li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Authentication_and_Authorization">Authentication and Authorization</a>
+<li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Timeouts_and_Cancellation">Timeouts and Cancellation</a>
+<li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Testing">Testing against Client Libraries</a>
+<li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Debugging">Debugging Client Libraries</a>
+<li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Inspecting_errors">Inspecting errors</a>
+</li></ul>
+<h2 id="hdr-Example_usage">Example usage</h2>
+<p>To get started with this package, create a client.
+<pre class="prettyprint">// go get cloud.google.com/go/notebooks/apiv2@latest
+ctx := context.Background()
+// This snippet has been automatically generated and should be regarded as a code template only.
+// It will require modifications to work:
+// - It may require correct/in-range values for request initialization.
+// - It may require specifying regional endpoints when creating the service client as shown in:
+//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+c, err := notebooks.NewNotebookClient(ctx)
+if err != nil {
+	// TODO: Handle error.
+}
+defer c.Close()
+</pre>
+<p>The client will use your default application credentials. Clients should be reused instead of created as needed.
+The methods of Client are safe for concurrent use by multiple goroutines.
+The returned client must be Closed when it is done being used.
+<h2 id="hdr-Using_the_Client">Using the Client</h2>
+<p>The following is an example of making an API call with the newly created client, mentioned above.
+<pre class="prettyprint">req := &amp;notebookspb.CheckInstanceUpgradabilityRequest{
+	// TODO: Fill request struct fields.
+	// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#CheckInstanceUpgradabilityRequest.
+}
+resp, err := c.CheckInstanceUpgradability(ctx, req)
+if err != nil {
+	// TODO: Handle error.
+}
+// TODO: Use resp.
+_ = resp
+</pre>
+<h2 id="hdr-Use_of_Context">Use of Context</h2>
+<p>The ctx passed to NewNotebookClient is used for authentication requests and
+for creating the underlying connection, but is not used for subsequent calls.
+Individual methods on the client use the ctx given to them.
+<p>To close the open connection, use the Close() method.
+</p></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="functions">
+Functions
+</h3>
+
+
+        <h4 id="cloud_google_com_go_notebooks_apiv2_NotebookClient_NewNotebookClient" data-uid="cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookClient">func NewNotebookClient
+</h4>
+        <div class="markdown level1 summary"><p>NewNotebookClient creates a new notebook service client based on gRPC.
+The returned client must be Closed when it is done being used to clean up its underlying connections.</p>
+<p>API v2 service for Workbench Notebooks Instances.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="declaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-go hljs">func NewNotebookClient(ctx &lt;a href=&quot;https://pkg.go.dev/context&quot;&gt;context&lt;/a&gt;.&lt;a href=&quot;https://pkg.go.dev/context#Context&quot;&gt;Context&lt;/a&gt;, opts ...option.ClientOption) (*&lt;a href=&quot;#cloud_google_com_go_notebooks_apiv2_NotebookClient&quot;&gt;NotebookClient&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/builtin#error&quot;&gt;error&lt;/a&gt;)</code></pre>
+        </div>
+
+
+        <h4 id="cloud_google_com_go_notebooks_apiv2_NotebookClient_NewNotebookRESTClient" data-uid="cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookRESTClient">func NewNotebookRESTClient
+</h4>
+        <div class="markdown level1 summary"><p>NewNotebookRESTClient creates a new notebook service rest client.</p>
+<p>API v2 service for Workbench Notebooks Instances.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="declaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-go hljs">func NewNotebookRESTClient(ctx &lt;a href=&quot;https://pkg.go.dev/context&quot;&gt;context&lt;/a&gt;.&lt;a href=&quot;https://pkg.go.dev/context#Context&quot;&gt;Context&lt;/a&gt;, opts ...option.ClientOption) (*&lt;a href=&quot;#cloud_google_com_go_notebooks_apiv2_NotebookClient&quot;&gt;NotebookClient&lt;/a&gt;, &lt;a href=&quot;https://pkg.go.dev/builtin#error&quot;&gt;error&lt;/a&gt;)</code></pre>
+        </div>
+
+
+        <h4 id="cloud_google_com_go_notebooks_apiv2_DefaultAuthScopes" data-uid="cloud.google.com/go/notebooks/apiv2.DefaultAuthScopes">func DefaultAuthScopes
+</h4>
+        <div class="markdown level1 summary"><p>DefaultAuthScopes reports the default set of authentication scopes to use with this package.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="declaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-go hljs">func DefaultAuthScopes() []&lt;a href=&quot;https://pkg.go.dev/builtin#string&quot;&gt;string&lt;/a&gt;</code></pre>
+        </div>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

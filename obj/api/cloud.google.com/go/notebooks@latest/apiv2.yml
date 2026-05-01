@@ -1,0 +1,2657 @@
+### YamlMime:UniversalReference
+items:
+    - uid: cloud.google.com/go/notebooks/apiv2
+      name: cloud.google.com/go/notebooks/apiv2
+      id: notebooks
+      summary: |
+        <p>Package notebooks is an auto-generated package for the
+        Notebooks API.
+        <p>Notebooks API is used to manage notebook resources in Google Cloud.
+        <h2 id="hdr-General_documentation">General documentation</h2>
+        <p>For information that is relevant for all client libraries please reference
+        <a href="https://pkg.go.dev/cloud.google.com/go#pkg-overview">https://pkg.go.dev/cloud.google.com/go#pkg-overview</a>. Some information on this
+        page includes:
+        <ul>
+        <li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Authentication_and_Authorization">Authentication and Authorization</a>
+        <li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Timeouts_and_Cancellation">Timeouts and Cancellation</a>
+        <li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Testing">Testing against Client Libraries</a>
+        <li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Debugging">Debugging Client Libraries</a>
+        <li><a href="https://pkg.go.dev/cloud.google.com/go#hdr-Inspecting_errors">Inspecting errors</a>
+        </ul>
+        <h2 id="hdr-Example_usage">Example usage</h2>
+        <p>To get started with this package, create a client.
+        <pre class="prettyprint">// go get cloud.google.com/go/notebooks/apiv2@latest
+        ctx := context.Background()
+        // This snippet has been automatically generated and should be regarded as a code template only.
+        // It will require modifications to work:
+        // - It may require correct/in-range values for request initialization.
+        // - It may require specifying regional endpoints when creating the service client as shown in:
+        //   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+        c, err := notebooks.NewNotebookClient(ctx)
+        if err != nil {
+        	// TODO: Handle error.
+        }
+        defer c.Close()
+        </pre>
+        <p>The client will use your default application credentials. Clients should be reused instead of created as needed.
+        The methods of Client are safe for concurrent use by multiple goroutines.
+        The returned client must be Closed when it is done being used.
+        <h2 id="hdr-Using_the_Client">Using the Client</h2>
+        <p>The following is an example of making an API call with the newly created client, mentioned above.
+        <pre class="prettyprint">req := &amp;notebookspb.CheckInstanceUpgradabilityRequest{
+        	// TODO: Fill request struct fields.
+        	// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#CheckInstanceUpgradabilityRequest.
+        }
+        resp, err := c.CheckInstanceUpgradability(ctx, req)
+        if err != nil {
+        	// TODO: Handle error.
+        }
+        // TODO: Use resp.
+        _ = resp
+        </pre>
+        <h2 id="hdr-Use_of_Context">Use of Context</h2>
+        <p>The ctx passed to NewNotebookClient is used for authentication requests and
+        for creating the underlying connection, but is not used for subsequent calls.
+        Individual methods on the client use the ctx given to them.
+        <p>To close the open connection, use the Close() method.
+      type: package
+      langs:
+        - go
+      children:
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.InstanceIterator
+        - cloud.google.com/go/notebooks/apiv2.InstanceIterator.All
+        - cloud.google.com/go/notebooks/apiv2.InstanceIterator.Next
+        - cloud.google.com/go/notebooks/apiv2.InstanceIterator.PageInfo
+        - cloud.google.com/go/notebooks/apiv2.LocationIterator
+        - cloud.google.com/go/notebooks/apiv2.LocationIterator.All
+        - cloud.google.com/go/notebooks/apiv2.LocationIterator.Next
+        - cloud.google.com/go/notebooks/apiv2.LocationIterator.PageInfo
+        - cloud.google.com/go/notebooks/apiv2.NotebookCallOptions
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookClient
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookRESTClient
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.CancelOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.CheckInstanceUpgradability
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.Close
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.Connection
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.CreateInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.CreateInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.DiagnoseInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.DiagnoseInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.GetIamPolicy
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.GetInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.GetLocation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.GetOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.ListInstances
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.ListLocations
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.ListOperations
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.ResetInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.ResetInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.RollbackInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.RollbackInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.SetIamPolicy
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.StartInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.StartInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.StopInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.StopInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.TestIamPermissions
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.UpdateInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.UpdateInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.UpgradeInstance
+        - cloud.google.com/go/notebooks/apiv2.NotebookClient.UpgradeInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.OperationIterator
+        - cloud.google.com/go/notebooks/apiv2.OperationIterator.All
+        - cloud.google.com/go/notebooks/apiv2.OperationIterator.Next
+        - cloud.google.com/go/notebooks/apiv2.OperationIterator.PageInfo
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Done
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Metadata
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Name
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Poll
+        - cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Wait
+        - cloud.google.com/go/notebooks/apiv2.DefaultAuthScopes
+      alt_link: https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2
+      friendlyApiName: Notebooks API v2
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      name: CreateInstanceOperation
+      id: CreateInstanceOperation
+      summary: |
+        CreateInstanceOperation manages a long-running operation from CreateInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type CreateInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Done
+      name: |
+        func (*CreateInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Metadata
+      name: |
+        func (*CreateInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Name
+      name: |
+        func (*CreateInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Poll
+      name: |
+        func (*CreateInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation.Wait
+      name: |
+        func (*CreateInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.CreateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      name: DeleteInstanceOperation
+      id: DeleteInstanceOperation
+      summary: |
+        DeleteInstanceOperation manages a long-running operation from DeleteInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type DeleteInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Done
+      name: |
+        func (*DeleteInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Metadata
+      name: |
+        func (*DeleteInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Name
+      name: |
+        func (*DeleteInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Poll
+      name: |
+        func (*DeleteInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) <a href="https://pkg.go.dev/builtin#error">error</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation.Wait
+      name: |
+        func (*DeleteInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.DeleteInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) <a href="https://pkg.go.dev/builtin#error">error</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      name: DiagnoseInstanceOperation
+      id: DiagnoseInstanceOperation
+      summary: |
+        DiagnoseInstanceOperation manages a long-running operation from DiagnoseInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type DiagnoseInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Done
+      name: |
+        func (*DiagnoseInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Metadata
+      name: |
+        func (*DiagnoseInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Name
+      name: |
+        func (*DiagnoseInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Poll
+      name: |
+        func (*DiagnoseInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation.Wait
+      name: |
+        func (*DiagnoseInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.DiagnoseInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.InstanceIterator
+      name: InstanceIterator
+      id: InstanceIterator
+      summary: |
+        InstanceIterator manages a stream of *notebookspb.Instance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type InstanceIterator struct {
+
+            	// Response is the raw response for the current page.
+            	// It must be cast to the RPC response type.
+            	// Calling Next() or InternalFetch() updates this value.
+            	Response interface{}
+
+            	// InternalFetch is for use by the Google Cloud Libraries only.
+            	// It is not part of the stable interface of this package.
+            	//
+            	// InternalFetch returns results from a single call to the underlying RPC.
+            	// The number of results is no greater than pageSize.
+            	// If there are no more results, nextPageToken is empty and err is nil.
+            	InternalFetch func(pageSize <a href="https://pkg.go.dev/builtin#int">int</a>, pageToken <a href="https://pkg.go.dev/builtin#string">string</a>) (results []*notebookspb.Instance, nextPageToken <a href="https://pkg.go.dev/builtin#string">string</a>, err <a href="https://pkg.go.dev/builtin#error">error</a>)
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.InstanceIterator.All
+      name: |
+        func (*InstanceIterator) All
+      id: All
+      summary: |
+        All returns an iterator. If an error is returned by the iterator, the
+        iterator will stop after that iteration.
+      parent: cloud.google.com/go/notebooks/apiv2.InstanceIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_InstanceIterator">InstanceIterator</a>) All() iter.Seq2[*notebookspb.Instance, error]
+    - uid: cloud.google.com/go/notebooks/apiv2.InstanceIterator.Next
+      name: |
+        func (*InstanceIterator) Next
+      id: Next
+      summary: |
+        Next returns the next result. Its second return value is iterator.Done if there are no more
+        results. Once Next returns Done, all subsequent calls will return Done.
+      parent: cloud.google.com/go/notebooks/apiv2.InstanceIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_InstanceIterator">InstanceIterator</a>) Next() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.InstanceIterator.PageInfo
+      name: |
+        func (*InstanceIterator) PageInfo
+      id: PageInfo
+      summary: |
+        PageInfo supports pagination. See the [google.golang.org/api/iterator] package for details.
+      parent: cloud.google.com/go/notebooks/apiv2.InstanceIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_InstanceIterator">InstanceIterator</a>) PageInfo() *iterator.PageInfo
+    - uid: cloud.google.com/go/notebooks/apiv2.LocationIterator
+      name: LocationIterator
+      id: LocationIterator
+      summary: |
+        LocationIterator manages a stream of *locationpb.Location.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type LocationIterator struct {
+
+            	// Response is the raw response for the current page.
+            	// It must be cast to the RPC response type.
+            	// Calling Next() or InternalFetch() updates this value.
+            	Response interface{}
+
+            	// InternalFetch is for use by the Google Cloud Libraries only.
+            	// It is not part of the stable interface of this package.
+            	//
+            	// InternalFetch returns results from a single call to the underlying RPC.
+            	// The number of results is no greater than pageSize.
+            	// If there are no more results, nextPageToken is empty and err is nil.
+            	InternalFetch func(pageSize <a href="https://pkg.go.dev/builtin#int">int</a>, pageToken <a href="https://pkg.go.dev/builtin#string">string</a>) (results []*locationpb.Location, nextPageToken <a href="https://pkg.go.dev/builtin#string">string</a>, err <a href="https://pkg.go.dev/builtin#error">error</a>)
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.LocationIterator.All
+      name: |
+        func (*LocationIterator) All
+      id: All
+      summary: |
+        All returns an iterator. If an error is returned by the iterator, the
+        iterator will stop after that iteration.
+      parent: cloud.google.com/go/notebooks/apiv2.LocationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_LocationIterator">LocationIterator</a>) All() iter.Seq2[*locationpb.Location, error]
+    - uid: cloud.google.com/go/notebooks/apiv2.LocationIterator.Next
+      name: |
+        func (*LocationIterator) Next
+      id: Next
+      summary: |
+        Next returns the next result. Its second return value is iterator.Done if there are no more
+        results. Once Next returns Done, all subsequent calls will return Done.
+      parent: cloud.google.com/go/notebooks/apiv2.LocationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_LocationIterator">LocationIterator</a>) Next() (*<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location">locationpb</a>.<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#Location">Location</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.LocationIterator.PageInfo
+      name: |
+        func (*LocationIterator) PageInfo
+      id: PageInfo
+      summary: |
+        PageInfo supports pagination. See the [google.golang.org/api/iterator] package for details.
+      parent: cloud.google.com/go/notebooks/apiv2.LocationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_LocationIterator">LocationIterator</a>) PageInfo() *iterator.PageInfo
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookCallOptions
+      name: NotebookCallOptions
+      id: NotebookCallOptions
+      summary: |
+        NotebookCallOptions contains the retry settings for each method of NotebookClient.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type NotebookCallOptions struct {
+            	ListInstances              []gax.CallOption
+            	GetInstance                []gax.CallOption
+            	CreateInstance             []gax.CallOption
+            	UpdateInstance             []gax.CallOption
+            	DeleteInstance             []gax.CallOption
+            	StartInstance              []gax.CallOption
+            	StopInstance               []gax.CallOption
+            	ResetInstance              []gax.CallOption
+            	CheckInstanceUpgradability []gax.CallOption
+            	UpgradeInstance            []gax.CallOption
+            	RollbackInstance           []gax.CallOption
+            	DiagnoseInstance           []gax.CallOption
+            	GetLocation                []gax.CallOption
+            	ListLocations              []gax.CallOption
+            	GetIamPolicy               []gax.CallOption
+            	SetIamPolicy               []gax.CallOption
+            	TestIamPermissions         []gax.CallOption
+            	CancelOperation            []gax.CallOption
+            	DeleteOperation            []gax.CallOption
+            	GetOperation               []gax.CallOption
+            	ListOperations             []gax.CallOption
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      name: NotebookClient
+      id: NotebookClient
+      summary: |
+        NotebookClient is a client for interacting with Notebooks API.
+        Methods, except Close, may be called concurrently. However, fields must not be modified concurrently with method calls.
+
+        API v2 service for Workbench Notebooks Instances.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type NotebookClient struct {
+
+            	// The call options for this service.
+            	CallOptions *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookCallOptions">NotebookCallOptions</a>
+
+            	// LROClient is used internally to handle long-running operations.
+            	// It is exposed so that its CallOptions can be modified if required.
+            	// Users should not Close this client.
+            	LROClient *lroauto.OperationsClient
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookClient
+      name: |
+        func NewNotebookClient
+      id: NewNotebookClient
+      summary: |
+        NewNotebookClient creates a new notebook service client based on gRPC.
+        The returned client must be Closed when it is done being used to clean up its underlying connections.
+
+        API v2 service for Workbench Notebooks Instances.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: function
+      langs:
+        - go
+      syntax:
+        content: func NewNotebookClient(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...option.ClientOption) (*<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	// TODO: Use client.
+            	_ = c
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.NewNotebookRESTClient
+      name: |
+        func NewNotebookRESTClient
+      id: NewNotebookRESTClient
+      summary: |
+        NewNotebookRESTClient creates a new notebook service rest client.
+
+        API v2 service for Workbench Notebooks Instances.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: function
+      langs:
+        - go
+      syntax:
+        content: func NewNotebookRESTClient(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...option.ClientOption) (*<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookRESTClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	// TODO: Use client.
+            	_ = c
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.CancelOperation
+      name: |
+        func (*NotebookClient) CancelOperation
+      id: CancelOperation
+      summary: |
+        CancelOperation is a utility method from google.longrunning.Operations.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) CancelOperation(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#CancelOperationRequest">CancelOperationRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) <a href="https://pkg.go.dev/builtin#error">error</a>
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	longrunningpb "cloud.google.com/go/longrunning/autogen/longrunningpb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &longrunningpb.CancelOperationRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#CancelOperationRequest.
+            	}
+            	err = c.CancelOperation(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.CheckInstanceUpgradability
+      name: |
+        func (*NotebookClient) CheckInstanceUpgradability
+      id: CheckInstanceUpgradability
+      summary: |
+        CheckInstanceUpgradability checks whether a notebook instance is upgradable.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) CheckInstanceUpgradability(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_CheckInstanceUpgradabilityRequest">CheckInstanceUpgradabilityRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_CheckInstanceUpgradabilityResponse">CheckInstanceUpgradabilityResponse</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.CheckInstanceUpgradabilityRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#CheckInstanceUpgradabilityRequest.
+            	}
+            	resp, err := c.CheckInstanceUpgradability(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.Close
+      name: |
+        func (*NotebookClient) Close
+      id: Close
+      summary: |
+        Close closes the connection to the API service. The user should invoke this when
+        the client is no longer required.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) Close() <a href="https://pkg.go.dev/builtin#error">error</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.Connection
+      name: |
+        func (*NotebookClient) Connection
+      id: Connection
+      summary: |
+        Connection returns a connection to the API service.
+
+        Deprecated: Connections are now pooled so this method does not always
+        return the same resource.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) Connection() *grpc.ClientConn
+      status: deprecated
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.CreateInstance
+      name: |
+        func (*NotebookClient) CreateInstance
+      id: CreateInstance
+      summary: |
+        CreateInstance creates a new Instance in a given project and location.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) CreateInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_CreateInstanceRequest">CreateInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.CreateInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#CreateInstanceRequest.
+            	}
+            	op, err := c.CreateInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.CreateInstanceOperation
+      name: |
+        func (*NotebookClient) CreateInstanceOperation
+      id: CreateInstanceOperation
+      summary: |
+        CreateInstanceOperation returns a new CreateInstanceOperation from a given name.
+        The name must be that of a previously created CreateInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) CreateInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_CreateInstanceOperation">CreateInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteInstance
+      name: |
+        func (*NotebookClient) DeleteInstance
+      id: DeleteInstance
+      summary: |
+        DeleteInstance deletes a single Instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) DeleteInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_DeleteInstanceRequest">DeleteInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.DeleteInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#DeleteInstanceRequest.
+            	}
+            	op, err := c.DeleteInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	err = op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteInstanceOperation
+      name: |
+        func (*NotebookClient) DeleteInstanceOperation
+      id: DeleteInstanceOperation
+      summary: |
+        DeleteInstanceOperation returns a new DeleteInstanceOperation from a given name.
+        The name must be that of a previously created DeleteInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) DeleteInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DeleteInstanceOperation">DeleteInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.DeleteOperation
+      name: |
+        func (*NotebookClient) DeleteOperation
+      id: DeleteOperation
+      summary: |
+        DeleteOperation is a utility method from google.longrunning.Operations.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) DeleteOperation(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#DeleteOperationRequest">DeleteOperationRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) <a href="https://pkg.go.dev/builtin#error">error</a>
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	longrunningpb "cloud.google.com/go/longrunning/autogen/longrunningpb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &longrunningpb.DeleteOperationRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#DeleteOperationRequest.
+            	}
+            	err = c.DeleteOperation(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.DiagnoseInstance
+      name: |
+        func (*NotebookClient) DiagnoseInstance
+      id: DiagnoseInstance
+      summary: |
+        DiagnoseInstance creates a Diagnostic File and runs Diagnostic Tool given an Instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) DiagnoseInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_DiagnoseInstanceRequest">DiagnoseInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.DiagnoseInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#DiagnoseInstanceRequest.
+            	}
+            	op, err := c.DiagnoseInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.DiagnoseInstanceOperation
+      name: |
+        func (*NotebookClient) DiagnoseInstanceOperation
+      id: DiagnoseInstanceOperation
+      summary: |
+        DiagnoseInstanceOperation returns a new DiagnoseInstanceOperation from a given name.
+        The name must be that of a previously created DiagnoseInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) DiagnoseInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient_DiagnoseInstanceOperation">DiagnoseInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.GetIamPolicy
+      name: |
+        func (*NotebookClient) GetIamPolicy
+      id: GetIamPolicy
+      summary: |
+        GetIamPolicy gets the access control policy for a resource. Returns an empty policy
+        if the resource exists and does not have a policy set.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) GetIamPolicy(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#GetIamPolicyRequest">GetIamPolicyRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#Policy">Policy</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	iampb "cloud.google.com/go/iam/apiv1/iampb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &iampb.GetIamPolicyRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#GetIamPolicyRequest.
+            	}
+            	resp, err := c.GetIamPolicy(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.GetInstance
+      name: |
+        func (*NotebookClient) GetInstance
+      id: GetInstance
+      summary: |
+        GetInstance gets details of a single Instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) GetInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_GetInstanceRequest">GetInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.GetInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#GetInstanceRequest.
+            	}
+            	resp, err := c.GetInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.GetLocation
+      name: |
+        func (*NotebookClient) GetLocation
+      id: GetLocation
+      summary: |
+        GetLocation gets information about a location.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) GetLocation(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location">locationpb</a>.<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#GetLocationRequest">GetLocationRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location">locationpb</a>.<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#Location">Location</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	locationpb "google.golang.org/genproto/googleapis/cloud/location"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &locationpb.GetLocationRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#GetLocationRequest.
+            	}
+            	resp, err := c.GetLocation(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.GetOperation
+      name: |
+        func (*NotebookClient) GetOperation
+      id: GetOperation
+      summary: |
+        GetOperation is a utility method from google.longrunning.Operations.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) GetOperation(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#GetOperationRequest">GetOperationRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#Operation">Operation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	longrunningpb "cloud.google.com/go/longrunning/autogen/longrunningpb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &longrunningpb.GetOperationRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#GetOperationRequest.
+            	}
+            	resp, err := c.GetOperation(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.ListInstances
+      name: |
+        func (*NotebookClient) ListInstances
+      id: ListInstances
+      summary: |
+        ListInstances lists instances in a given project and location.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) ListInstances(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_ListInstancesRequest">ListInstancesRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_InstanceIterator">InstanceIterator</a>
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            	"google.golang.org/api/iterator"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.ListInstancesRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#ListInstancesRequest.
+            	}
+            	it := c.ListInstances(ctx, req)
+            	for {
+            		resp, err := it.Next()
+            		if err == iterator.Done {
+            			break
+            		}
+            		if err != nil {
+            			// TODO: Handle error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+
+            		// If you need to access the underlying RPC response,
+            		// you can do so by casting the `Response` as below.
+            		// Otherwise, remove this line. Only populated after
+            		// first call to Next(). Not safe for concurrent access.
+            		_ = it.Response.(*notebookspb.ListInstancesResponse)
+            	}
+            }
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.ListInstancesRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#ListInstancesRequest.
+            	}
+            	for resp, err := range c.ListInstances(ctx, req).All() {
+            		if err != nil {
+            			// TODO: Handle error and break/return/continue. Iteration will stop after any error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+            	}
+            }
+          name: all
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.ListLocations
+      name: |
+        func (*NotebookClient) ListLocations
+      id: ListLocations
+      summary: |
+        ListLocations lists information about the supported locations for this service.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) ListLocations(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location">locationpb</a>.<a href="https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#ListLocationsRequest">ListLocationsRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_LocationIterator">LocationIterator</a>
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            	"google.golang.org/api/iterator"
+
+            	locationpb "google.golang.org/genproto/googleapis/cloud/location"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &locationpb.ListLocationsRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#ListLocationsRequest.
+            	}
+            	it := c.ListLocations(ctx, req)
+            	for {
+            		resp, err := it.Next()
+            		if err == iterator.Done {
+            			break
+            		}
+            		if err != nil {
+            			// TODO: Handle error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+
+            		// If you need to access the underlying RPC response,
+            		// you can do so by casting the `Response` as below.
+            		// Otherwise, remove this line. Only populated after
+            		// first call to Next(). Not safe for concurrent access.
+            		_ = it.Response.(*locationpb.ListLocationsResponse)
+            	}
+            }
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	locationpb "google.golang.org/genproto/googleapis/cloud/location"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &locationpb.ListLocationsRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/google.golang.org/genproto/googleapis/cloud/location#ListLocationsRequest.
+            	}
+            	for resp, err := range c.ListLocations(ctx, req).All() {
+            		if err != nil {
+            			// TODO: Handle error and break/return/continue. Iteration will stop after any error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+            	}
+            }
+          name: all
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.ListOperations
+      name: |
+        func (*NotebookClient) ListOperations
+      id: ListOperations
+      summary: |
+        ListOperations is a utility method from google.longrunning.Operations.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) ListOperations(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#ListOperationsRequest">ListOperationsRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_OperationIterator">OperationIterator</a>
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	longrunningpb "cloud.google.com/go/longrunning/autogen/longrunningpb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            	"google.golang.org/api/iterator"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &longrunningpb.ListOperationsRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#ListOperationsRequest.
+            	}
+            	it := c.ListOperations(ctx, req)
+            	for {
+            		resp, err := it.Next()
+            		if err == iterator.Done {
+            			break
+            		}
+            		if err != nil {
+            			// TODO: Handle error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+
+            		// If you need to access the underlying RPC response,
+            		// you can do so by casting the `Response` as below.
+            		// Otherwise, remove this line. Only populated after
+            		// first call to Next(). Not safe for concurrent access.
+            		_ = it.Response.(*longrunningpb.ListOperationsResponse)
+            	}
+            }
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	longrunningpb "cloud.google.com/go/longrunning/autogen/longrunningpb"
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &longrunningpb.ListOperationsRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#ListOperationsRequest.
+            	}
+            	for resp, err := range c.ListOperations(ctx, req).All() {
+            		if err != nil {
+            			// TODO: Handle error and break/return/continue. Iteration will stop after any error.
+            		}
+            		// TODO: Use resp.
+            		_ = resp
+            	}
+            }
+          name: all
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.ResetInstance
+      name: |
+        func (*NotebookClient) ResetInstance
+      id: ResetInstance
+      summary: |
+        ResetInstance resets a notebook instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) ResetInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_ResetInstanceRequest">ResetInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.ResetInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#ResetInstanceRequest.
+            	}
+            	op, err := c.ResetInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.ResetInstanceOperation
+      name: |
+        func (*NotebookClient) ResetInstanceOperation
+      id: ResetInstanceOperation
+      summary: |
+        ResetInstanceOperation returns a new ResetInstanceOperation from a given name.
+        The name must be that of a previously created ResetInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) ResetInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.RollbackInstance
+      name: |
+        func (*NotebookClient) RollbackInstance
+      id: RollbackInstance
+      summary: |
+        RollbackInstance rollbacks a notebook instance to the previous version.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) RollbackInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_RollbackInstanceRequest">RollbackInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.RollbackInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#RollbackInstanceRequest.
+            	}
+            	op, err := c.RollbackInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.RollbackInstanceOperation
+      name: |
+        func (*NotebookClient) RollbackInstanceOperation
+      id: RollbackInstanceOperation
+      summary: |
+        RollbackInstanceOperation returns a new RollbackInstanceOperation from a given name.
+        The name must be that of a previously created RollbackInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) RollbackInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.SetIamPolicy
+      name: |
+        func (*NotebookClient) SetIamPolicy
+      id: SetIamPolicy
+      summary: |
+        SetIamPolicy sets the access control policy on the specified resource. Replaces
+        any existing policy.
+
+        Can return NOT_FOUND, INVALID_ARGUMENT, and PERMISSION_DENIED
+        errors.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) SetIamPolicy(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#SetIamPolicyRequest">SetIamPolicyRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#Policy">Policy</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	iampb "cloud.google.com/go/iam/apiv1/iampb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &iampb.SetIamPolicyRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#SetIamPolicyRequest.
+            	}
+            	resp, err := c.SetIamPolicy(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.StartInstance
+      name: |
+        func (*NotebookClient) StartInstance
+      id: StartInstance
+      summary: |
+        StartInstance starts a notebook instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) StartInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_StartInstanceRequest">StartInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.StartInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#StartInstanceRequest.
+            	}
+            	op, err := c.StartInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.StartInstanceOperation
+      name: |
+        func (*NotebookClient) StartInstanceOperation
+      id: StartInstanceOperation
+      summary: |
+        StartInstanceOperation returns a new StartInstanceOperation from a given name.
+        The name must be that of a previously created StartInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) StartInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.StopInstance
+      name: |
+        func (*NotebookClient) StopInstance
+      id: StopInstance
+      summary: |
+        StopInstance stops a notebook instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) StopInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_StopInstanceRequest">StopInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.StopInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#StopInstanceRequest.
+            	}
+            	op, err := c.StopInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.StopInstanceOperation
+      name: |
+        func (*NotebookClient) StopInstanceOperation
+      id: StopInstanceOperation
+      summary: |
+        StopInstanceOperation returns a new StopInstanceOperation from a given name.
+        The name must be that of a previously created StopInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) StopInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.TestIamPermissions
+      name: |
+        func (*NotebookClient) TestIamPermissions
+      id: TestIamPermissions
+      summary: |
+        TestIamPermissions returns permissions that a caller has on the specified resource. If the
+        resource does not exist, this will return an empty set of
+        permissions, not a NOT_FOUND error.
+
+        Note: This operation is designed to be used for building
+        permission-aware UIs and command-line tools, not for authorization
+        checking. This operation may “fail open” without warning.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) TestIamPermissions(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#TestIamPermissionsRequest">TestIamPermissionsRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb">iampb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#TestIamPermissionsResponse">TestIamPermissionsResponse</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	iampb "cloud.google.com/go/iam/apiv1/iampb"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &iampb.TestIamPermissionsRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/iam/apiv1/iampb#TestIamPermissionsRequest.
+            	}
+            	resp, err := c.TestIamPermissions(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.UpdateInstance
+      name: |
+        func (*NotebookClient) UpdateInstance
+      id: UpdateInstance
+      summary: |
+        UpdateInstance updateInstance updates an Instance.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) UpdateInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_UpdateInstanceRequest">UpdateInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.UpdateInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#UpdateInstanceRequest.
+            	}
+            	op, err := c.UpdateInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.UpdateInstanceOperation
+      name: |
+        func (*NotebookClient) UpdateInstanceOperation
+      id: UpdateInstanceOperation
+      summary: |
+        UpdateInstanceOperation returns a new UpdateInstanceOperation from a given name.
+        The name must be that of a previously created UpdateInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) UpdateInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.UpgradeInstance
+      name: |
+        func (*NotebookClient) UpgradeInstance
+      id: UpgradeInstance
+      summary: |
+        UpgradeInstance upgrades a notebook instance to the latest version.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) UpgradeInstance(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, req *<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_UpgradeInstanceRequest">UpgradeInstanceRequest</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+      codeexamples:
+        - content: |
+            package main
+
+            import (
+            	"context"
+
+            	notebooks "cloud.google.com/go/notebooks/apiv2"
+
+            	notebookspb "cloud.google.com/go/notebooks/apiv2/notebookspb"
+            )
+
+            func main() {
+            	ctx := context.Background()
+            	// This snippet has been automatically generated and should be regarded as a code template only.
+            	// It will require modifications to work:
+            	// - It may require correct/in-range values for request initialization.
+            	// - It may require specifying regional endpoints when creating the service client as shown in:
+            	//   https://pkg.go.dev/cloud.google.com/go#hdr-Client_Options
+            	c, err := notebooks.NewNotebookClient(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	defer c.Close()
+
+            	req := &notebookspb.UpgradeInstanceRequest{
+            		// TODO: Fill request struct fields.
+            		// See https://pkg.go.dev/cloud.google.com/go/notebooks/apiv2/notebookspb#UpgradeInstanceRequest.
+            	}
+            	op, err := c.UpgradeInstance(ctx, req)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+
+            	resp, err := op.Wait(ctx)
+            	if err != nil {
+            		// TODO: Handle error.
+            	}
+            	// TODO: Use resp.
+            	_ = resp
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.NotebookClient.UpgradeInstanceOperation
+      name: |
+        func (*NotebookClient) UpgradeInstanceOperation
+      id: UpgradeInstanceOperation
+      summary: |
+        UpgradeInstanceOperation returns a new UpgradeInstanceOperation from a given name.
+        The name must be that of a previously created UpgradeInstanceOperation, possibly from a different process.
+      parent: cloud.google.com/go/notebooks/apiv2.NotebookClient
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (c *<a href="#cloud_google_com_go_notebooks_apiv2_NotebookClient">NotebookClient</a>) UpgradeInstanceOperation(name <a href="https://pkg.go.dev/builtin#string">string</a>) *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.OperationIterator
+      name: OperationIterator
+      id: OperationIterator
+      summary: |
+        OperationIterator manages a stream of *longrunningpb.Operation.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type OperationIterator struct {
+
+            	// Response is the raw response for the current page.
+            	// It must be cast to the RPC response type.
+            	// Calling Next() or InternalFetch() updates this value.
+            	Response interface{}
+
+            	// InternalFetch is for use by the Google Cloud Libraries only.
+            	// It is not part of the stable interface of this package.
+            	//
+            	// InternalFetch returns results from a single call to the underlying RPC.
+            	// The number of results is no greater than pageSize.
+            	// If there are no more results, nextPageToken is empty and err is nil.
+            	InternalFetch func(pageSize <a href="https://pkg.go.dev/builtin#int">int</a>, pageToken <a href="https://pkg.go.dev/builtin#string">string</a>) (results []*longrunningpb.Operation, nextPageToken <a href="https://pkg.go.dev/builtin#string">string</a>, err <a href="https://pkg.go.dev/builtin#error">error</a>)
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.OperationIterator.All
+      name: |
+        func (*OperationIterator) All
+      id: All
+      summary: |
+        All returns an iterator. If an error is returned by the iterator, the
+        iterator will stop after that iteration.
+      parent: cloud.google.com/go/notebooks/apiv2.OperationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_OperationIterator">OperationIterator</a>) All() iter.Seq2[*longrunningpb.Operation, error]
+    - uid: cloud.google.com/go/notebooks/apiv2.OperationIterator.Next
+      name: |
+        func (*OperationIterator) Next
+      id: Next
+      summary: |
+        Next returns the next result. Its second return value is iterator.Done if there are no more
+        results. Once Next returns Done, all subsequent calls will return Done.
+      parent: cloud.google.com/go/notebooks/apiv2.OperationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_OperationIterator">OperationIterator</a>) Next() (*<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb">longrunningpb</a>.<a href="https://pkg.go.dev/cloud.google.com/go/longrunning/autogen/longrunningpb#Operation">Operation</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.OperationIterator.PageInfo
+      name: |
+        func (*OperationIterator) PageInfo
+      id: PageInfo
+      summary: |
+        PageInfo supports pagination. See the [google.golang.org/api/iterator] package for details.
+      parent: cloud.google.com/go/notebooks/apiv2.OperationIterator
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (it *<a href="#cloud_google_com_go_notebooks_apiv2_OperationIterator">OperationIterator</a>) PageInfo() *iterator.PageInfo
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      name: ResetInstanceOperation
+      id: ResetInstanceOperation
+      summary: |
+        ResetInstanceOperation manages a long-running operation from ResetInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type ResetInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Done
+      name: |
+        func (*ResetInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Metadata
+      name: |
+        func (*ResetInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Name
+      name: |
+        func (*ResetInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Poll
+      name: |
+        func (*ResetInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation.Wait
+      name: |
+        func (*ResetInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.ResetInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_ResetInstanceOperation">ResetInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      name: RollbackInstanceOperation
+      id: RollbackInstanceOperation
+      summary: |
+        RollbackInstanceOperation manages a long-running operation from RollbackInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type RollbackInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Done
+      name: |
+        func (*RollbackInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Metadata
+      name: |
+        func (*RollbackInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Name
+      name: |
+        func (*RollbackInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Poll
+      name: |
+        func (*RollbackInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation.Wait
+      name: |
+        func (*RollbackInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.RollbackInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_RollbackInstanceOperation">RollbackInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      name: StartInstanceOperation
+      id: StartInstanceOperation
+      summary: |
+        StartInstanceOperation manages a long-running operation from StartInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type StartInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Done
+      name: |
+        func (*StartInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Metadata
+      name: |
+        func (*StartInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Name
+      name: |
+        func (*StartInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Poll
+      name: |
+        func (*StartInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation.Wait
+      name: |
+        func (*StartInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.StartInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StartInstanceOperation">StartInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      name: StopInstanceOperation
+      id: StopInstanceOperation
+      summary: |
+        StopInstanceOperation manages a long-running operation from StopInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type StopInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Done
+      name: |
+        func (*StopInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Metadata
+      name: |
+        func (*StopInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Name
+      name: |
+        func (*StopInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Poll
+      name: |
+        func (*StopInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation.Wait
+      name: |
+        func (*StopInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.StopInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_StopInstanceOperation">StopInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      name: UpdateInstanceOperation
+      id: UpdateInstanceOperation
+      summary: |
+        UpdateInstanceOperation manages a long-running operation from UpdateInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type UpdateInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Done
+      name: |
+        func (*UpdateInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Metadata
+      name: |
+        func (*UpdateInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Name
+      name: |
+        func (*UpdateInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Poll
+      name: |
+        func (*UpdateInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation.Wait
+      name: |
+        func (*UpdateInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.UpdateInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpdateInstanceOperation">UpdateInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      name: UpgradeInstanceOperation
+      id: UpgradeInstanceOperation
+      summary: |
+        UpgradeInstanceOperation manages a long-running operation from UpgradeInstance.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: type
+      langs:
+        - go
+      syntax:
+        content: |-
+            type UpgradeInstanceOperation struct {
+            	// contains filtered or unexported fields
+            }
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Done
+      name: |
+        func (*UpgradeInstanceOperation) Done
+      id: Done
+      summary: |
+        Done reports whether the long-running operation has completed.
+      parent: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>) Done() <a href="https://pkg.go.dev/builtin#bool">bool</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Metadata
+      name: |
+        func (*UpgradeInstanceOperation) Metadata
+      id: Metadata
+      summary: |
+        Metadata returns metadata associated with the long-running operation.
+        Metadata itself does not contact the server, but Poll does.
+        To get the latest metadata, call this method after a successful call to Poll.
+        If the metadata is not available, the returned metadata and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>) Metadata() (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_OperationMetadata">OperationMetadata</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Name
+      name: |
+        func (*UpgradeInstanceOperation) Name
+      id: Name
+      summary: |
+        Name returns the name of the long-running operation.
+        The name is assigned by the server and is unique within the service from which the operation is created.
+      parent: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>) Name() <a href="https://pkg.go.dev/builtin#string">string</a>
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Poll
+      name: |
+        func (*UpgradeInstanceOperation) Poll
+      id: Poll
+      summary: |
+        Poll fetches the latest state of the long-running operation.
+
+        Poll also fetches the latest metadata, which can be retrieved by Metadata.
+
+        If Poll fails, the error is returned and op is unmodified. If Poll succeeds and
+        the operation has completed with failure, the error is returned and op.Done will return true.
+        If Poll succeeds and the operation has completed successfully,
+        op.Done will return true, and the response of the operation is returned.
+        If Poll succeeds and the operation has not completed, the returned response and error are both nil.
+      parent: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>) Poll(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation.Wait
+      name: |
+        func (*UpgradeInstanceOperation) Wait
+      id: Wait
+      summary: |
+        Wait blocks until the long-running operation is completed, returning the response and any errors encountered.
+
+        See documentation of Poll for error-handling information.
+      parent: cloud.google.com/go/notebooks/apiv2.UpgradeInstanceOperation
+      type: method
+      langs:
+        - go
+      syntax:
+        content: func (op *<a href="#cloud_google_com_go_notebooks_apiv2_UpgradeInstanceOperation">UpgradeInstanceOperation</a>) Wait(ctx <a href="https://pkg.go.dev/context">context</a>.<a href="https://pkg.go.dev/context#Context">Context</a>, opts ...<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2">gax</a>.<a href="https://pkg.go.dev/github.com/googleapis/gax-go/v2#CallOption">CallOption</a>) (*<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb">notebookspb</a>.<a href="/go/docs/reference/cloud.google.com/go/notebooks/latest/apiv2/notebookspb#cloud_google_com_go_notebooks_apiv2_notebookspb_Instance">Instance</a>, <a href="https://pkg.go.dev/builtin#error">error</a>)
+    - uid: cloud.google.com/go/notebooks/apiv2.DefaultAuthScopes
+      name: |
+        func DefaultAuthScopes
+      id: DefaultAuthScopes
+      summary: |
+        DefaultAuthScopes reports the default set of authentication scopes to use with this package.
+      parent: cloud.google.com/go/notebooks/apiv2
+      type: function
+      langs:
+        - go
+      syntax:
+        content: func DefaultAuthScopes() []<a href="https://pkg.go.dev/builtin#string">string</a>

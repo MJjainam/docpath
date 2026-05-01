@@ -1,0 +1,7 @@
+update_time {
+	seconds: 1777666348
+	nanos: 979696414
+}
+name: "cloud.google.com/go/notebooks"
+version: "v1.16.0"
+language: "go"

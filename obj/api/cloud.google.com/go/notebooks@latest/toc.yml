@@ -1,0 +1,18 @@
+### YamlMime:TableOfContent
+- uid: cloud.google.com/go/notebooks
+  name: cloud.google.com/go/notebooks
+  items:
+    - uid: cloud.google.com/go/notebooks/apiv1
+      name: apiv1
+    - uid: cloud.google.com/go/notebooks/apiv1/notebookspb
+      name: apiv1/notebookspb
+    - uid: cloud.google.com/go/notebooks/apiv1beta1
+      name: apiv1beta1
+      status: beta
+    - uid: cloud.google.com/go/notebooks/apiv1beta1/notebookspb
+      name: apiv1beta1/notebookspb
+      status: beta
+    - uid: cloud.google.com/go/notebooks/apiv2
+      name: apiv2
+    - uid: cloud.google.com/go/notebooks/apiv2/notebookspb
+      name: apiv2/notebookspb
